@@ -30,6 +30,11 @@ let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 
 // Begin your solution here...
 
+//create a green rectangle to be the background
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor = limeGreen
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
 /*:
  ## Use Source Control
