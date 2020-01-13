@@ -31,11 +31,17 @@ let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 // Begin your solution here...
 
 //create a green rectangle to be the background
+//all shapes after this will have no border
 canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
+//change color to green
 canvas.fillColor = limeGreen
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
+//create a black square to layer circle on top of
+//change color to black
+canvas.fillColor = Color.black
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 400)
 /*:
  ## Use Source Control
  
